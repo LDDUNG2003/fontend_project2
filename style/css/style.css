@@ -1,0 +1,9 @@
+/* header style start */
+.header{
+    width: 100%;
+    display: flex;
+}
+
+.navbar__list-item{
+    text-transform: uppercase;
+}
