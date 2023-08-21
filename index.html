@@ -14,10 +14,11 @@
     <div class="main">
         <header class="header">
             <div class="navbar">
-                <img src="./style/image/logo.png" alt="" class="logo">
+                <div class="navbar--bag">
+                    <img src="./style/image/logo.png" alt="" class="logo">
                 <ul class="navbar__list list-item"> 
                     <li class="select-item navbar__list-item list-item">
-                        <a class=" navbar__list-link" href="">Trang Chủ</a>
+                        <a class=" navbar__list-link" href="#home">Trang Chủ</a>
                     </li>
                     <li class="navbar__list-item list-item">
                         <a href="" class="navbar__list-link">Giới Thiệu</a>
@@ -35,8 +36,9 @@
                         <a href="" class="navbar__list-link">Liên Hệ</a>
                     </li>
                 </ul>
+                </div>
             </div>
-            <div class="introduce">
+            <div id="home" class="introduce">
                 <div class="introduce__item">
                     <h1 class="introduce__item-header">
                         thế giới nội thất số 1 việt nam <br> <span style="color: var(--primary-color );">hoàng hoan</span>
@@ -104,9 +106,13 @@
                 </ul>
             </div>
             <div class="Featured">
-                <h1 class="Featured--heading">sản phẩm nổi bật</h1>
+                <h1 class="content__heading">sản phẩm nổi bật</h1>
                 <div class="Featured--content">
+                    
                     <ul class="Featured__list">
+                        <button class="content--btn">
+                            <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+                        </button>
                         <li class="Featured__list--item">
                             <img src="./style/image/Featured_products/giuong-ngu.png" alt="" class="Featured__list--image">
                             <div class="Feature__content">
@@ -165,26 +171,141 @@
                                 </ul>
                                 <p class="Feature__content--note">(size lớn trắng vừa)</p>
                                 <p class="Feature__content--price">8.999.000 VND</p>
+                            </div>
+                        </li>
+                        <button class="content--btn">
+                            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+                        </button>
+                    </ul>
+                </div>
+            </div>
+            <div class="Content__Myinformation">
+                <div class="Myinformation--top">
+                    <h3 class="Myinformation--heading">Về Chúng Tôi</h3>
+                    <div class="Myinformation--top-content">
+                        <div class="Myinformation--top-image"></div>
+                        <div class="Myinformation__introduce">
+                            <p class="Myinformation__introduce--heading">Nội Thất <span
+                                    style="font-weight: 800;text-transform:uppercase;">hoàng hoan</span><br>uy tín song hành chất lượng
+                            </p>
+                            <p class="Myinformation__introduce--content"> nội thất <span
+                                    style="font-weight: 500;text-transform:uppercase;">hoàng hoan</span>chúng tôi tự hào là đứa con tinh
+                                thần ra đời từ sau hơn 30 năm hoạt động trong lĩnh vực kinh doanh đồ gỗ nội thất với thương hiệu ĐỒ GỖ
+                                HOÀNG HOAN nổi tiếng</p>
+                            <p class="Myinformation__introduce--content"> nội thất <span
+                                style="font-weight: 500;text-transform:uppercase;">hoàng hoan</span>chúng tôi tự hào là đứa con tinh
+                            thần ra đời từ sau hơn 30 năm hoạt động trong lĩnh vực kinh doanh đồ gỗ nội thất với thương hiệu ĐỒ GỖ
+                            HOÀNG HOAN nổi tiếng</p>
+                            <ul class="Myinformation__introduce--listImg">
+                                <li class="ListImg--content"><img class="ListImg--img" src="./style/image/ve-chung-toi/ve-chung-toi-1.jpg" alt=""></li>
+                                <li class="ListImg--content"><img class="ListImg--img" src="./style/image/ve-chung-toi/ve-chung-toi-2.jpg" alt=""></li>
+                                <li class="ListImg--content"><img class="ListImg--img" src="./style/image/ve-chung-toi/ve-chung-toi-3.jpg" alt=""></li>
+                                <li class="ListImg--content"><img class="ListImg--img" src="./style/image/ve-chung-toi/ve-chung-toi-4.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="Myinfomation--left">
+                    <h3 class="Myinformation--heading">Tại Sao Nên Chọn Hoàng Hoan</h3>
+                    <ul class="Myinfomation--List">
+                        <li class="Myinfomation--list-ittem">  
+                            <img src="./style/image/ve-chung-toi/chinh-sach.jpg" alt="" class="Myinfomation--list-img">
+                            <div class="Myinfomation--list-content">
+                                <p class="content--header">Chính sách giá </p>
+                                <p class="content--footer">Tốt nhất và công khai trên web</p>
+                            </div>
+                        </li>
+                        <li class="Myinfomation--list-ittem">  
+                            <img src="./style/image/ve-chung-toi/san-pham.jpg" alt="" class="Myinfomation--list-img">
+                            <div class="Myinfomation--list-content">
+                                <p class="content--header">sản suất</p>
+                                <p class="content--footer">trực tiếp bởi đội ngũ nhân viên hàng đầu</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="Myinfomation--List">
+                        <li class="Myinfomation--list-ittem">  
+                            <img src="./style/image/ve-chung-toi/chat-luong.jpg" alt="" class="Myinfomation--list-img">
+                            <div class="Myinfomation--list-content">
+                                <p class="content--header">Chất lượng </p>
+                                <p class="content--footer">cam kết chất lượng sản phẩm và thi công</p>
+                            </div>
+                        </li>
+                        <li class="Myinfomation--list-ittem">  
+                            <img src="./style/image/ve-chung-toi/bao-hanh.jpg" alt="" class="Myinfomation--list-img">
+                            <div class="Myinfomation--list-content">
+                                <p class="content--header">bảo hành</p>
+                                <p class="content--footer">dịch vụ bảo hành sản phẩm tốt nhất khu vực</p>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="Content__Myinformation">
-                
+            <div class="content__news">
+                <h3 class="content__heading">Tin Tức</h3>
+                <div class="News--content">
+                    <div class="news--image">
+                       <div class="new--image--bag">
+                        <h4 class="news--image-heading">Cách chọn sofa cho phòng khách nhà bạn thêm sang trọng</h4>
+                        <p class="news--image-contain">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe atque facilis officiis fugiat impedit optio ipsam dolore tenetur quidem, facere provident. Cum iure harum esse iusto tempora? A, illo reiciendis.</p>
+                       </div>
+                    </div>
+                    <ul class="News__list">
+                        <li class="News__list--item">
+                            <div class="news__list--contact">
+                                <img class="news--contact-image" src="./style/image/tin-tuc/tintuc-1.png" alt="">
+                                <div>
+                                    <p class="news__contact--heading">trang trí phòng khách cho thêm năng động</p>
+                                    <p class="news__contact--content">sit amet consectetur adipisicing elit. Amet quas facilis soluta consequuntur maxime quae sint odio omnis excepturi. Nobis blanditiis obcaecati suscipit aut quis corrupti, illum sit maiores officia.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="News__list--item">
+                            <div class="news__list--contact">
+                                <img class="news--contact-image" src="./style/image/tin-tuc/tintuc-2.png" alt="">
+                                <div>
+                                    <p class="news__contact--heading">cập nhật xu hướng phòng khách phong cách tối giản</p>
+                                    <p class="news__contact--content">amet consectetur adipisicing elit. Nostrum mollitia officiis earum laborum deserunt, velit, labore neque, qui sunt a quae alias molestiae minima sit error perspiciatis odio aut distinctio.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="News__list--item">
+                            <div class="news__list--contact">
+                                <img class="news--contact-image" src="./style/image/tin-tuc/tintuc-3.png" alt="">
+                                <div>
+                                    <p class="news__contact--heading">cách sắp xếp vị trí bàn ăn một cách rộng rãi</p>
+                                    <p class="news__contact--content">sit amet consectetur adipisicing elit. Enim, officiis, molestias ut inventore, totam maiores voluptas nemo dicta itaque corrupti eaque quaerat. Ratione temporibus sapiente praesentium quia? Sequi, animi fugit.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="News__list--next">
+                            <a href="" class="News__list--next-link">tiếp theo >></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content--partner">
+                <h3 class="content__heading">đối tác</h3>
+                <ul class="partner--list">
+                    <li class="partner--item"><a href=""><img src="./style/image/partner/marvella.png" alt=""></li></a>
+                    <li class="partner--item"><a href=""><img src="./style/image/partner/melissa.png" alt=""></li></a>
+                    <li class="partner--item"><a href=""><img src="./style/image/partner/muong-thanh.png" alt=""></li></a>
+                    <li class="partner--item"><a href=""><img src="./style/image/partner/sheraton.png" alt=""></li></a>
+                    <li class="partner--item"><a href=""><img src="./style/image/partner/sunrise-sapa.png" alt=""></li></a>
+                    <li class="partner--item"><a href=""><img src="./style/image/partner/the-coffee-house.png" alt=""></li></a>
+                    <li class="partner--item"><a href=""> <img src="./style/image/partner/vinpearl.png" alt=""></li></a>
+                </ul>
             </div>
         </div>
         <footer class="footer">
-            <!-- <div class="footer__contact">
+            <div class="footer__contact">
                 <img class="footer__contact--image" src="./style/image/lienhe-1-transformed.png" alt="">
                 <div class="footer__contact--input">
                     
                 </div>
-            </div> -->
+            </div>
         </footer>
     </div>
     <script src="./style/js/main.js"></script>
-    
-
 </body>
 </html>
