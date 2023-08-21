@@ -1,8 +1,40 @@
+:root{
+    --primary-color: #bd945f;
+    --text-color:#2c2e53;
+    --star-color:#fbbc04;
+}
+*{
+    font-family: sans-serif ;
+}
+
 .main{
-    max-width: 1200px;
+    max-width: 1000px;
     width: 100%;
     margin: auto;
+}
+.logo{
+    height: 65px;
 }
 .list-item{
     list-style: none;
 }
+/* <span class="loader"></span> */
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
