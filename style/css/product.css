@@ -1,0 +1,191 @@
+.product__header {
+    padding-top: 60px;
+    position: relative;
+    height: 500px;
+
+}
+
+.product__header--img {
+    position: absolute;
+    width: 1300px;
+    background-size: cover;
+    background-clip: border-box;
+    padding-top: 50%;
+    right: -15%;
+    z-index: -1;
+}
+
+.product__header-bag {
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    z-index: 0;
+}
+
+.product--text-header {
+    position: relative;
+    font-size: 60px;
+    font-weight: 100;
+    height: 70px;
+    left: -60px;
+    color: var(--primary-color);
+    font-family: "FzSignRathi";
+    z-index: -1;
+}
+
+.product--text-footer {
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.product--btn {
+    font-size: 21px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 40px;
+    padding: 7px;
+    width: 180px;
+    color: var(--text-color);
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.circle {
+    position: absolute;
+    bottom: 7px;
+    z-index: 0;
+    left: 50%;
+}
+
+.circle--list {
+    list-style: none;
+    display: flex;
+}
+
+.circle-item {
+    margin: 8px;
+}
+
+.directional-btn {
+    position: absolute;
+    padding: 10px;
+    background-color: beige;
+    opacity: 0.8;
+    top: 50%;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.return-image {
+    left: 10px;
+}
+
+.next-image {
+    right: 10px;
+}
+
+.content__product {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+}
+
+.content__product-header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.product--header-text {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    font-family: "Gotham-Ultra";
+}
+
+.product--header-text::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    padding-top: 7px;
+    bottom: -50%;
+    background-color: var(--primary-color);
+}
+
+.product--header-link {
+    text-decoration: none;
+    margin-top: auto;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product--list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.product--list-item {
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.product__list-img {
+    width: 180px;
+}
+
+.product__list-contain {
+    display: grid;
+    justify-content: center;
+}
+
+.product__list-heaading {
+    font-size: 16px;
+    margin: 7px 0px;
+}
+
+.Product__list--Evaluate {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.Product__list--Evaluate li{
+    padding: 4px;
+}
+
+.product__list-name{
+    font-size: 16px;
+    color: var(--text-color);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.product__list-describe{
+    font-size: 14px;
+    font-family: initial;
+    text-align: center;
+    padding-bottom: 5px;
+    color: #9c9c9c;
+}
+
+.product__list--price{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}

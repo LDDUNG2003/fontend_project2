@@ -1,0 +1,16 @@
+@font-face {
+    font-family:  "Gotham-Medium";
+    src: url("../font-style/Gotham-Medium.otf");
+}
+@font-face {
+    font-family: "Gotham-Thin";
+    src: url("../font-style/Gotham-Thin.otf");
+}
+@font-face {
+    font-family: "Gotham-Ultra";
+    src: url("../font-style/Gotham-Ultra.otf");
+}
+@font-face {
+    font-family: 'FzSignRathi';
+    src: url("../font-style/SVN-Sharpen.otf");
+}
