@@ -1,0 +1,130 @@
+.introduce__content{
+    width: 100%;
+    background-color: #fcfafa;
+    padding: 10px;
+    margin-bottom: 70px;
+}
+
+.content-image {
+    padding-top: 55px;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+.content--image-bg {
+    filter: brightness(65%);
+    width: 1300px;
+    height: 180px;
+    background-image: url("../image/introproduction__bg.png");
+    position: absolute;
+    z-index: 0;
+    right: -14%;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.content--image-content {
+    text-align: center;
+    margin: auto;
+}
+
+.introduce--content {
+    background-color: #fff;
+    position: relative;
+    margin-top: -25px;
+    z-index: 0;
+    padding-top: 50px
+}
+
+.introduce--content-heading {
+    padding: 10px 0px;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-color);
+    position: relative;
+}
+
+.introduce--content-heading::after{
+    content: '';
+    width: 120px;
+    bottom: 0px;
+    left: 44%;
+    padding-top: 8px;
+    background-color: var(--primary-color);
+    position: absolute;
+
+}
+
+.introduce--accepted {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.introduce__accepted--contain {
+    width: 45%;
+}
+
+.introduce__accepted--image {
+    width: 100%;
+    height: 70%;
+}
+
+.introduce__accepted--text {
+    font-weight: 100;
+    font-size: 16px;
+    padding: 6px 0px;
+}
+
+.introduce--program {
+    padding: 5px;
+}
+
+.introduce__program--image {
+    width: 100%;
+}
+
+.introduce__program--text {
+    padding-top: 32px;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.introduce__mission--list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.introduce__mission--item {
+    border: solid var(--primary-color) 1px;
+    width: 47%;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.introduce__mission--heading {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 18px;
+}
+
+.introduce__mission--text {
+    font-size: 14px;
+    font-weight: 100;
+    color: var(--text-color);
+}
