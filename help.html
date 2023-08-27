@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style type="text/css">
+    #divContainer {
+        background-color: silver;
+        height: 50px;
+        padding: 2px;
+    }
+
+    span {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+    }
+
+    .button-normal {
+        background-color: gray;  
+    }
+
+    .button-over {
+        background-color: navy;  
+    }
+
+    .button-click {
+        background-color: yellow;  
+    }
+    </style>
+</head>
+<body>
+    <div id="divContainer">
+        <span class="button-normal">
+            
+        </span>
+        <span class="button-normal">
+            
+        </span>
+        <span class="button-normal">
+            
+        </span>
+    </div>
+
+    <script type="text/javascript">
+let eventUtility = {
+    addEvent : (function() {
+        if (typeof addEventListener !== "undefined") {
+            return function(obj, evt, fn) {
+                obj.addEventListener(evt, fn, false);
+            };
+        } else {
+            return function(obj, evt, fn) {
+                obj.attachEvent("on" + evt, fn);
+            };
+        }
+    }()),
+    removeEvent : (function() {
+        if (typeof removeEventListener !== "undefined") {
+            return function(obj, evt, fn) {
+                obj.removeEventListener(evt, fn, false);
+            };
+        } else {
+            return function(obj, evt, fn) {
+                obj.detachEvent("on" + evt, fn);
+            };
+        }
+    }())
+};
+    function mouseHandler(event) {
+        let eSrc = event.target;
+        let type = event.type;
+
+        if (eSrc.tagName.toUpperCase() === "SPAN") {
+            if (type === "mouseover") {
+                if (eSrc.className !== "button-click") {
+                    eSrc.className = "button-over";
+                }
+            }
+            else if(type === "mouseout") {
+                if (eSrc.className !== "button-click") {
+                    eSrc.className = "button-normal";
+                }
+            } else if (type === "click") {
+                if (eSrc.className !== "button-click") {
+                    eSrc.className = "button-click";
+                } else {
+                    eSrc.className = "button-over";
+                }
+
+            }
+        }
+    }
+
+    eventUtility.addEvent(document, "mouseover", mouseHandler);
+    eventUtility.addEvent(document, "mouseout", mouseHandler);
+    eventUtility.addEvent(document, "click", mouseHandler);
+
+
+    </script>
+</body>
+</html>
