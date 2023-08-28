@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Chủ</title>
     <link rel="shortcut icon" href="./style/image/logo.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./style/css/fonts.css">
     <link rel="stylesheet" href="./style/css/clear.css">
     <link rel="stylesheet" href="./style/css/base.css">
     <link rel="stylesheet" href="./style/css/home.css">
     <script src="https://kit.fontawesome.com/9ffed7d99e.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> JS
+
 </head>
 
 <body>
@@ -115,7 +116,10 @@
                 <h1 class="content__heading">sản phẩm nổi bật</h1>
                 <div class="Featured--content">
 
-                    <ul class="Featured__list" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+                    <ul class="Featured__list">
+                        <button class="content--btn">
+                            <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+                        </button>
                         <li class="Featured__list--item">
                             <img src="./style/image/Featured_products/giuong-ngu.png" alt="" class="Featured__list--image">
                             <div class="Feature__content">
@@ -176,21 +180,9 @@
                                 <p class="Feature__content--price">8.999.000 VND</p>
                             </div>
                         </li>
-                        <li class="Featured__list--item">
-                            <img src="./style/image/Featured_products/giuong-ngu.png" alt="" class="Featured__list--image">
-                            <div class="Feature__content">
-                                <h4 class="Feature__content--heading">Giường Ngủ Cao Cấp</h4>
-                                <ul class="Feature__content--Evaluate">
-                                    <li><i class="fa-solid fa-star" style="color: var(--star-color); width: 13px;"></i></li>
-                                    <li><i class="fa-solid fa-star" style="color: var(--star-color); width: 13px;"></i></li>
-                                    <li><i class="fa-solid fa-star" style="color: var(--star-color); width: 13px;"></i></li>
-                                    <li><i class="fa-solid fa-star" style="color: var(--star-color); width: 13px;"></i></li>
-                                    <li><i class="fa-solid fa-star" style="color: var(--star-color); width: 13px;"></i></li>
-                                </ul>
-                                <p class="Feature__content--note">(size lớn trắng vừa)</p>
-                                <p class="Feature__content--price">8.999.000 VND</p>
-                            </div>
-                        </li>
+                        <button class="content--btn">
+                            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+                        </button>
                     </ul>
                 </div>
             </div>
@@ -384,8 +376,8 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <!-- {% comment %} <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> {% endcomment %} -->
-        <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
-        <!-- <script src="/style/js/main.js"></script> -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="/style/js/main.js"></script>
         <script>
             $(document).ready(function() {
                 $('.Featured__list').slick();

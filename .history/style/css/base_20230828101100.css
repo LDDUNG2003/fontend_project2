@@ -23,7 +23,6 @@ html {
 .slick-next:before {
     font-size: 25px;
     color: var(--primary-color);
-    padding: 10px;
 }
 
 .logo {
