@@ -1,42 +1,29 @@
-:root {
+:root{
     --primary-color: #bd945f;
-    --text-color: #2c2e53;
-    --star-color: #fbbc04;
+    --text-color:#2c2e53;
+    --star-color:#fbbc04;
+}
+*{
+    font-family: 'Gotham-medium', 'Gotham-Ultra' ,  'Gotham-Thin' ;
 }
 
-* {
-    font-family: 'Gotham-medium', 'Gotham-Ultra', 'Gotham-Thin';
-}
-
-html {
+html{
     background-color: #f3f3f3;
     z-index: -5;
 }
 
-.main {
+.main{
     max-width: 1000px;
     width: 100%;
     margin: auto;
 }
-
-.slick-prev:before,
-.slick-next:before {
-    font-size: 25px;
-    color: var(--primary-color);
-    padding: 10px;
-}
-
-.logo {
+.logo{
     height: 65px;
 }
-
-.list-item {
+.list-item{
     list-style: none;
 }
-
-
 /* header navbar */
-
 .header {
     width: 100%;
     padding-top: 20px;
@@ -83,9 +70,7 @@ html {
     font-size: 18px;
 }
 
-
 /* hover navbar item */
-
 .navbar__list-item::before {
     content: '';
     background-color: var(--primary-color);
@@ -116,13 +101,8 @@ html {
 .select-item:hover.select-item::after {
     display: none;
 }
-
-
 /* end navbar header */
-
-
 /* footer bable */
-
 .footer__lable {
     display: flex;
     width: 100%;
@@ -131,7 +111,7 @@ html {
     justify-content: space-between;
 }
 
-.footer__lable::after {
+.footer__lable::after{
     content: '';
     width: 1300px;
     padding-top: 20%;
@@ -149,7 +129,7 @@ html {
 .footer--list-item {
     font-size: 16px;
     padding-top: 8px;
-    text-transform: capitalize;
+    text-transform:capitalize;
     font-family: initial;
 }
 
@@ -162,7 +142,7 @@ html {
     font-family: 'Gotham-Medium';
 }
 
-.footer--list-heading::after {
+.footer--list-heading::after{
     content: '';
     background-color: var(--primary-color);
     width: 110px;
@@ -187,10 +167,7 @@ html {
     width: 16px;
     padding: 5px;
 }
-
-
 /* <span class="loader"></span> */
-
 .loader {
     width: 48px;
     height: 48px;
@@ -200,13 +177,13 @@ html {
     display: inline-block;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
-}
+    }
 
-@keyframes rotation {
+    @keyframes rotation {
     0% {
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
     }
-}
+} 
